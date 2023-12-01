@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SEMANA11.View.Operaciones">
+    <ContentPage.Content>
+        <StackLayout Padding="50">
+
+            <Label FontSize="Title" Text:"Title"></Label>
+            <Label FontSize="Title" Text:"Descripcion"></Label>
+                      
+            <Entry FontSize="Title" Text="{Binding Title}"></Entry>
+            <Entry FontSize="Title" Text="{Binding Descripcion}"></Entry>
+            
+            <Button Text="Save"  Command="{Binding Save}" 
+                    BackgroundColor="MediumPurple"></Button>
+
+            <Button Text="Get" Command="{Binding Get}" 
+                    BackgroundColor="MediumPurple"></Button>
+
+            <ListView ItemsSource="{Binding Task}"></ListView>
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>
